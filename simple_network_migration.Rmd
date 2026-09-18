@@ -1,0 +1,319 @@
+---
+title: "Migration on a network"
+output:
+  
+  html_document:
+    toc: true
+    toc_float: true
+    df_print: paged
+  word_document: 
+    toc: true
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, echo = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+knitr::opts_chunk$set(cache=FALSE)
+knitr::opts_chunk$set(fig.width=7, fig.height=5)
+options(max.print=23)
+library(here);library(dplyr); library(stringr)
+library(ggplot2)
+library(tidyverse)
+library(igraph)
+```
+
+# Introduction
+
+Tigers have declined in numbers partly due to loss of habitat connectivity. Here, we use movement along a dynamic network to assess what habitat and connectivity characteristics facilitates or minimizes local extinctions. 
+
+## Simple network
+
+  - generate a simple network with 10 vertices fully connected.
+  - assign population sizes of animals to each vertex
+  - migration is possible through the network
+  - migration is dependent on population size
+  - add edge and vertex characteristics
+    - Vertex can be vegetated, have food etc, have human habitaion
+    - Edges can have weights associated with them due to roadways, forested networks, rivers/mountains, etc
+
+```{r}
+n_vertices <- 10
+
+migration_network_historical <- make_full_graph(n = n_vertices, directed = FALSE)
+
+plot(migration_network_historical, 
+     vertex.color = "lightblue", 
+     vertex.size = 30, 
+     vertex.label.color = "black", 
+     edge.color = "darkgray",
+     main = "Fully Connected Migration Network")
+```
+
+### Vertex characteristics
+
+We assign population sizes $p_i$ at each vertex i, with habitat characteristics such as habitat type $t_i$, human presence (hunting, conflict)  $h_i$, food availability  $f_i$,  climate  $c_i$, etc. $p_i$ is evolving with birth, death (due to carrying capacity $K$, life time), and migration. If $p_i = 0$ for a long time, make $K=0$.
+
+```{r}
+
+
+# Vertex characteristics 
+
+#population sizes
+V(migration_network_historical)$name <- paste0("population_",1:n_vertices)
+
+V(migration_network_historical)$pop_size <- sample(50:500, 
+                                                   size = vcount(migration_network_historical), replace = TRUE)
+
+
+# habitat type
+habitat_types <- c("Old Growth", "Wetland", "Shrubland", "Secondary Forest")
+
+
+V(migration_network_historical)$habitat <- sample(habitat_types, 
+                                                size = vcount(migration_network_historical), replace = TRUE)
+
+#human presence
+
+human_presence <- c("High", "Medium", "Low", "None")
+
+V(migration_network_historical)$human_presence <- sample(human_presence, 
+       size = vcount(migration_network_historical), replace = TRUE, 
+       prob = c(0.2, 0.3, 0.3, 0.2))
+
+# food availability 
+
+food_availability <- c("High", "Medium", "Low", "None")
+
+V(migration_network_historical)$food_availability <- sample(food_availability, 
+       size = vcount(migration_network_historical), replace = TRUE, 
+       prob = c(0.3, 0.4, 0.2, 0.1))
+
+#plot
+plot(migration_network_historical, 
+     vertex.label.cex = 0.8,
+## Add Edge characteristics= "black",
+     vertex.size = V(migration_network_historical)$pop_size/20
+     )
+
+```
+
+
+
+### Edge characteristics
+
+We assign corridor types to edges, which can be wildlife corridor (for example - dense forest, open woodland, etc), terrain (river crossing, mountains, desert plateau), or urbanization (highways, human settlements). Each corridor type has a weight associated with it that affects migration.
+
+Friction maps available for terrain. That can influence edge weight.
+
+
+```{r}
+corridor_types <- c("Dense Forest", "Open Woodland", "River Crossing", "Highway Obstruction")
+
+E(migration_network_historical)$corridor_type <- sample(corridor_types, 
+                                        size = ecount(migration_network_historical), 
+                                        replace = TRUE,
+                                        prob = c(0.3, 0.4, 0.15, 0.15))
+
+
+weight_lookup <- c(
+  "Dense Forest"        = 0.9,
+  "Open Woodland"       = 0.7,
+  "River Crossing"      = 0.3,
+  "Highway Obstruction" = 0.1
+)
+
+E(migration_network_historical)$weight <- weight_lookup[E(migration_network_historical)$corridor_type]
+
+#visualize the network
+# Map habitat types to distinct colors
+habitat_colors <- c(
+  "Old Growth"       = "#2e7d32",
+  "Secondary Forest" = "#81c784",
+  "Wetland"          = "#0288d1",
+  "Shrubland"        = "#fbc02d"
+)
+V(migration_network_historical)$color <- habitat_colors[V(migration_network_historical)$habitat]
+
+#plot
+plot(migration_network_historical, 
+     vertex.label.cex = 0.8,
+     vertex.label.color = "black",
+     vertex.size = V(migration_network_historical)$pop_size/20,
+     edge.width = E(migration_network_historical)$weight*5
+     )
+
+legend(
+  "bottomleft",
+  legend = names(habitat_colors),
+  fill = habitat_colors,
+  title = "Habitat",
+  bty = "n",
+  cex = 0.8
+)
+
+
+
+```
+
+
+### Assign carrying capacity
+
+Based on habitat type, food availability, and human presence. 
+
+```{r}
+# assign carrying capacity
+
+base_capacity_lookup <- c(
+  "Old Growth"       = 600,
+  "Wetland"          = 450,
+  "Secondary Forest" = 300,
+  "Shrubland"        = 150
+)
+
+# Capacity retention modifier under human pressure
+human_impact_lookup <- c(
+  "None"    = 1.00,  # Negligible impact
+  "Low"     = 0.85,  # 15% reduction in capacity
+  "Medium" = 0.70,  # 30% reduction in capacity
+  "High"   = 0.35   # 65% reduction due to high disturbance
+)
+
+food_availability_lookup <- c(
+  "High"    = 1.00,  # Full capacity
+  "Medium"  = 0.90,  # 10% reduction in capacity
+  "Low"     = 0.75,  # 25% reduction in capacity
+  "None"    = 0.50   # 50% reduction due to lack of food
+)
+
+# computing capcity
+V(migration_network_historical)$capacity <- round(base_capacity_lookup[V(migration_network_historical)$habitat] * human_impact_lookup[V(migration_network_historical)$human_presence] * 
+food_availability_lookup[V(migration_network_historical)$food_availability])
+
+V(migration_network_historical)$pop_size <- round(V(migration_network_historical)$capacity*runif(vcount(migration_network_historical), min = 0.8, max = 1.1))
+
+igraph::as_data_frame(migration_network_historical, what = "vertices")[, c("name", "habitat", "food_availability", 
+                                       "human_presence", "capacity", "pop_size")]
+
+
+
+```
+
+
+
+### Migration, Birth, Death
+
+```{r}
+
+
+
+simulate_migration_step <- function(graph, m0 = 0.2){
+  
+  n <- vcount(migration_network_historical)
+  current_pop <- V(migration_network_historical)$pop_size
+  capacities <- V(migration_network_historical)$capacity
+  
+  
+  adj_weights <- as.matrix(as_adjacency_matrix(migration_network_historical, attr = "weight", sparse = FALSE))
+  
+  density <- current_pop / capacities
+  
+  p_out <- pmin(m0*density, 0.6)
+  
+  #migration transition matrix
+  
+  T_mat <- matrix(0, nrow = n, ncol = n)
+  
+  for(i in seq_len(n)){
+    total_weight <- sum(adj_weights[i,])
+    
+    if(total_weight > 0){
+      T_mat[i,] <- (adj_weights[i,]/total_weight)*p_out[i]
+    }
+  }
+  
+  
+  #migration matrix
+  
+  migration_mat <- matrix(0, nrow = n, ncol = n)
+  
+  for(i in seq_len(n)){
+    for(j in seq_len(n)){
+      if(i != j){
+        migration_mat[i,j] <- round(current_pop[i]*T_mat[i,j])
+      }
+    }
+  }
+  
+  
+  emigrants <- rowSums(migration_mat)
+  immigrants <- colSums(migration_mat)
+  
+  V(migration_network_historical)$pop_size <- current_pop - emigrants + immigrants
+  return(list(graph = migration_network_historical, flux = migration_mat ))
+  
+}
+
+
+# simulate over generations
+
+generations <- 20
+pop_history <- matrix(NA, nrow = generations, ncol = vcount(migration_network_historical))
+
+colnames(pop_history) <- V(migration_network_historical)$name
+
+
+for(gen in 1:generations){
+  pop_history[gen, ] <- V(migration_network_historical)$pop_size
+  step_result <- simulate_migration_step(migration_network_historical, m0 = 0.2)
+  migration_network_historical <- step_result$graph
+}
+
+# plot population sizes as stacked plot
+pop_df <- as.data.frame(pop_history)
+pop_df$generation <- seq_len(nrow(pop_df))
+
+pop_long <- pivot_longer(pop_df, cols = -generation, names_to = "Population", values_to = "Size")
+
+pop_long$Population <- factor(pop_long$Population, levels = V(migration_network_historical)$name)
+
+ggplot(pop_long, aes(x = generation, y = Size, fill = Population)) +
+  geom_area(alpha = 0.85, color = "white", linewidth = 0.25) +
+  scale_fill_viridis_d(option = "turbo") +
+  scale_x_continuous(expand = c(0, 0)) +
+  scale_y_continuous(expand = c(0, 0)) +
+  labs(
+    title = "",
+    x = "Simulation Generation",
+    y = "Total Number of Individuals",
+    fill = "Subpopulation"
+  ) +
+  theme_classic() +
+  theme(
+    plot.title = element_text(face = "bold", size = 12),
+    legend.position = "none" # Combined into the network legend
+  )
+
+plot(
+  migration_network_historical,
+  # layout = net_layout,
+  vertex.size = V(migration_network_historical)$pop_size / 25,       # Node size scaled to final population size
+  
+  vertex.label = V(migration_network_historical)$name,
+  vertex.label.cex = 0.7,
+  vertex.label.color = "black",
+  edge.width = E(migration_network_historical)$weight * 4,           # Line width scaled to corridor weight
+  edge.color = "gray60",
+  main = "Final Network State"
+)
+
+```
+
+
+
+
+
+
+
+
+
