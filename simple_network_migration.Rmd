@@ -67,7 +67,7 @@ V(migration_network_historical)$pop_size <- sample(50:500,
 
 
 # habitat type
-habitat_types <- c("Old Growth", "Wetland", "Shrubland", "Secondary Forest")
+habitat_types <- c("Plains and Grasslands", "Evergreen Forest", "Mangroves", "Deciduous Forest")
 
 
 V(migration_network_historical)$habitat <- sample(habitat_types, 
@@ -102,13 +102,13 @@ plot(migration_network_historical,
 
 ### Edge characteristics
 
-We assign corridor types to edges, which can be wildlife corridor (for example - dense forest, open woodland, etc), terrain (river crossing, mountains, desert plateau), or urbanization (highways, human settlements). Each corridor type has a weight associated with it that affects migration.
+We assign corridor types to edges, which can be wildlife corridor (for example - dense forest, ravines, etc), terrain (riverine, mountains, desert plateau), or urbanization (agriculture, highways, human settlements). Each corridor type has a weight associated with it that affects migration.
 
 Friction maps available for terrain. That can influence edge weight.
 
 
 ```{r}
-corridor_types <- c("Dense Forest", "Open Woodland", "River Crossing", "Highway Obstruction")
+corridor_types <- c("Dense Forest", "Riverine", "Agriculture", "Urbanization")
 
 E(migration_network_historical)$corridor_type <- sample(corridor_types, 
                                         size = ecount(migration_network_historical), 
@@ -118,9 +118,9 @@ E(migration_network_historical)$corridor_type <- sample(corridor_types,
 
 weight_lookup <- c(
   "Dense Forest"        = 0.9,
-  "Open Woodland"       = 0.7,
-  "River Crossing"      = 0.3,
-  "Highway Obstruction" = 0.1
+  "Riverine"       = 0.7,
+  "Agriculture"      = 0.3,
+  "Urbanization" = 0.1
 )
 
 E(migration_network_historical)$weight <- weight_lookup[E(migration_network_historical)$corridor_type]
@@ -128,10 +128,10 @@ E(migration_network_historical)$weight <- weight_lookup[E(migration_network_hist
 #visualize the network
 # Map habitat types to distinct colors
 habitat_colors <- c(
-  "Old Growth"       = "#2e7d32",
-  "Secondary Forest" = "#81c784",
-  "Wetland"          = "#0288d1",
-  "Shrubland"        = "#fbc02d"
+  "Plains and Grasslands" = "#fbc02d",
+  "Deciduous Forest" = "#81c784",
+  "Evergreen Forest" = "#2e7d32",
+  "Mangroves" = "#0288d1"
 )
 V(migration_network_historical)$color <- habitat_colors[V(migration_network_historical)$habitat]
 
@@ -165,10 +165,10 @@ Based on habitat type, food availability, and human presence.
 # assign carrying capacity
 
 base_capacity_lookup <- c(
-  "Old Growth"       = 600,
-  "Wetland"          = 450,
-  "Secondary Forest" = 300,
-  "Shrubland"        = 150
+  "Plains and Grasslands" = 600,
+  "Evergreen Forest" = 450,
+  "Deciduous Forest" = 300,
+  "Mangroves"        = 150
 )
 
 # Capacity retention modifier under human pressure
