@@ -1,0 +1,113 @@
+---
+title: "Tiger migration on a network"
+output:
+  
+  html_document:
+    toc: true
+    toc_float: true
+    df_print: paged
+  pdf_document: default
+  word_document: 
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, echo = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+knitr::opts_chunk$set(cache=FALSE)
+knitr::opts_chunk$set(fig.width=7, fig.height=5)
+options(max.print=23)
+library(here);library(dplyr); library(stringr)
+library(ggplot2)
+library(tidyverse)
+library(igraph)
+```
+
+# Introduction
+
+Tigers have declined in numbers partly due to loss of habitat connectivity. Here, we use movement along a dynamic network given by data from 2022 to assess what habitat and connectivity characteristics facilitates or minimizes local extinctions.
+
+
+```{r}
+
+nodes <- read.csv(here('data', 'sectionV_NODES_site_tables_wide.csv'))
+  
+nodes_w_tigers <- as.data.frame(nodes) %>% 
+  filter(!is.na(Node))
+  
+n_vertices <- nodes_w_tigers %>% 
+  distinct(Node, landscape) %>% 
+  nrow()
+
+migration_network_2022 <- make_full_graph(n = n_vertices, directed = FALSE)
+
+
+
+```
+
+### Vertex characteristics
+
+We assign population sizes $p_i$ at each vertex i based on the estimate of unique tigers captured.
+
+
+```{r}
+
+
+# Vertex characteristics 
+
+names <- nodes_w_tigers %>% 
+  select(Node, landscape, location) %>% 
+  group_by(Node, landscape) %>%
+  mutate(name = paste0(Node, "_", landscape)) %>% 
+  ungroup() %>%
+  distinct(Node, landscape, name) 
+  
+population_number <- as.numeric(as.factor(names$name))
+
+
+#population sizes
+# V(migration_network_2022)$name <- paste0("population_",1:n_vertices)
+
+V(migration_network_2022)$name <- names$name
+
+population_size <- nodes_w_tigers %>% 
+  select(Node, landscape, Unique.tigers.captured) %>% 
+  group_by(Node, landscape) %>%
+  summarise(pop_size = sum(Unique.tigers.captured, na.rm = TRUE)) %>%
+  ungroup() 
+
+V(migration_network_2022)$pop_size <- population_size$pop_size
+
+#plot
+plot(migration_network_2022, 
+     vertex.label.cex = 0.8,
+## Add Edge characteristics= "black",
+     vertex.size = V(migration_network_2022)$pop_size/10
+     )
+
+
+```
+
+### Edge characteristics
+
+We connect the nodes by estimating potential for connectivity through all locations.
+
+```{r}
+
+connectivity <- read.csv(here('data', 'sectionIV_connectivity_matrix_all_nodes.csv'))
+
+
+connectivity_subset <- connectivity %>% 
+  filter(location %in% nodes_w_tigers$location) 
+
+
+
+
+```
+
+
+### Future Direction
+
+We can assign habitat level carrying capacities based on prey densities, human presence, and habitat type. Similarly, we can assign edge characteristics like resistance based on habitat connectivity. We can then simulate future tiger populations and movement based on current data. We can also increase or decrease connectivity between certain nodes to estimate the impact on tiger populations. 
+
+

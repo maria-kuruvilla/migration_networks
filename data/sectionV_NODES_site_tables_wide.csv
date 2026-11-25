@@ -1,0 +1,170 @@
+Node,location,landscape,table,page,caption_location,Model space (km2),Camera points,Trap nights (effort),Number of tiger photos,Unique tigers captured,Model,D SECR (per 100 km2),sigma (SE) (km),sigma Female (SE) (km),sigma Male (SE) (km),g0 (SE),g0 Female (SE),g0 Male (SE),Pmix Female (SE),Pmix Male (SE)
+1,Corbett Tiger Reserve,Shivalik Hills and Gangetic Plains,V.1.3,209,Corbett Tiger Reserve,2182,514,36845,,260,Pmix(sex) g0(.)σ(sex),14.65(0.92),,1.53(0.010),1.93(0.01),,0.09(0.001),0.09(0.001),0.63(0.05),0.37(0.03)
+1,Ramnagar Forest Division,Shivalik Hills and Gangetic Plains,V.1.11,221,Ramnagar Forest Division,1146,100,3318,,67,Pmix(sex) g0(sex)σ(sex),11.48(1.43),,1.12(0.037),1.77(0.063),,0.17(0.01),0.13(0.01),0.62(0.06),0.38(0.06)
+2,Pilibhit Tiger Reserve,Shivalik Hills and Gangetic Plains,V.1.17,232,Pilibhit Tiger Reserve,1191,308,15537,,63,Pmix(sex) g0(sex)σ(sex),5.84(0.75),,2.51(0.048),4.55(0.114),,0.072(0.003),0.033(0.0017),0.62(0.06),0.38(0.06)
+2,Katarniaghat Wildlife Sanctuary,Shivalik Hills and Gangetic Plains,V.1.16,230,"Dudhwa National Park, Kishenpur Wildlife Sanctuary and Katarniaghat Wildlife Sanctuary",737,251,10752,,59,Pmix(sex) g0(sex)σ(sex),7.69(1.04),,3.94(0.12),6.30(0.253),,0.03(0.001),0.02(0.001),0.59(0.07),0.41(0.07)
+3,Valmiki Tiger Reserve,Shivalik Hills and Gangetic Plains,V.1.22,239,Valmiki Tiger Reserve,1368,429,14707,,54,Pmix(sex) g0(sex)σ(sex),4.32(0.06),,2.23(0.059),4.27(0.118),,0.06 (0.004),0.03(0.004),0.43(0.07),0.57(0.07)
+4,Terai East Forest Division,Shivalik Hills and Gangetic Plains,V.1.13,224,Terai East Forest Division,2983,177,8427,,53,Pmix(sex) g0(sex)σ(sex),2.69(0.38),,4.28(0.19),12.34(0.50),,0.04(0.003),0.02(0.003),0.67(0.06),0.33(0.06)
+4,Terai West Forest Division,Shivalik Hills and Gangetic Plains,V.1.14,226,Terai West Forest Division,630,88,2956,,52,"Pmix(sex), g0(sex)σ(sex)",15 (2.4),,0.95(0.03),2.6(0.12),,0.2(0.02),0.07(0.01),0.75(0.06),0.25(0.06)
+1,Rajaji Tiger Reserve,Shivalik Hills and Gangetic Plains,V.1.10,219,Rajaji Tiger Reserve,780,246,17188,,51,Pmix(sex) g0(sex)σ(sex),8.15(1.25),,1.3(0.4),2.7(0.1),,0.06(0.01),0.03(0.002),0.65(0.07),0.35(0.07)
+2,Kishenpur Wildlife Sanctuary,Shivalik Hills and Gangetic Plains,V.1.16,230,"Dudhwa National Park, Kishenpur Wildlife Sanctuary and Katarniaghat Wildlife Sanctuary",913,98,8722,,41,Pmix(sex) g0(sex)σ(sex),6.10(0.96),,2.09(0.044),2.68(0.057),,0.13(0.01),0.10(0.01),0.56(0.08),0.44(0.08)
+,Haldwani Forest Division,Shivalik Hills and Gangetic Plains,V.1.5,212,Haldwani Forest Division,1138,149,5881,,36,Pmix(sex) g0(sex)σ(sex),4.68(0.79),,1.58(0.038),3.07(0.11),,0.15(0.01),0.09(0.01),0.76(0.07),0.24(0.07)
+2,Dudhwa National Park,Shivalik Hills and Gangetic Plains,V.1.16,230,"Dudhwa National Park, Kishenpur Wildlife Sanctuary and Katarniaghat Wildlife Sanctuary",819.25,296,12907,,35,Pmix(sex) g0(sex)σ(sex),4.53(0.77),,2.36(0.062),4.88(0.14),,0.08(0.004),0.031(0.002),0.50(0.09),0.50(0.09)
+,Lansdowne Forest Division,Shivalik Hills and Gangetic Plains,V.1.7,215,Lansdowne Forest Division,1654,181,6371,,29,Pmix(sex) g0(.)σ(.),3.22(0.61),,1.73(0.07),1.73(0.07),,0.06(0.01),0.06(0.01),0.53(0.11),0.47(0.11)
+,Amangarh,Shivalik Hills and Gangetic Plains,V.1.15,228,Amangarh,808,45,1678,,20,g0(.)σ(.),9.34(1.96),1.81(0.10),,,0.05(0.01),,,,
+,Champawat Forest Division,Shivalik Hills and Gangetic Plains,V.1.2,207,Champawat Forest Division,,32,1388,83,11,,,,,,,,,,
+,South Kheri Forest Division,Shivalik Hills and Gangetic Plains,V.1.20,235,South Kheri Forest Division,,22,966,110,10,,,,,,,,,,
+4,Terai Central Forest Division,Shivalik Hills and Gangetic Plains,V.1.12,222,Terai Central Forest Division,,15,320,34,8,,,,,,,,,,
+,Ranipur Tiger Reserve,Shivalik Hills and Gangetic Plains,V.1.18,233,Ranipur Tiger Reserve,,99,4092,45,4,,,,,,,,,,
+1,Dehradun Forest Division,Shivalik Hills and Gangetic Plains,V.1.4,210,Dehradun Forest Division,,262,13702,43,3,,,,,,,,,,
+,Suhelwa Wildlife Sanctuary,Shivalik Hills and Gangetic Plains,V.1.21,237,Suhelwa Wildlife Sanctuary,,75,2400,39,3,,,,,,,,,,
+,Almora Forest Division,Shivalik Hills and Gangetic Plains,V.1.1,206,Almora Forest Division,,13,258,12,1,,,,,,,,,,
+,Nainital Forest Division,Shivalik Hills and Gangetic Plains,V.1.8,216,Nainital Forest Division,,40,1577,2,1,,,,,,,,,,
+,Sohagibarwa Wildlife Sanctuary,Shivalik Hills and Gangetic Plains,V.1.19,234,Sohagibarwa Wildlife Sanctuary,,80,2413,4,1,,,,,,,,,,
+,Kalsi Forest Division,Shivalik Hills and Gangetic Plains,V.1.6,213,Kalsi Forest Division,,154,7159,0,,,,,,,,,,,
+,Narendranagar Forest Division,Shivalik Hills and Gangetic Plains,V.1.9,217,Narendranagar Forest Division,,11,445,,,,,,,,,,,,
+3,Bandhavgarh Tiger Reserve,Central India and Eastern Ghats,V.2.6,252,Bandhavgarh Tiger Reserve,2181,697,20138,,134,Pmix(sex)g0(sex)σ(sex),7.5(0.65),,1.5(0.03),2.5(0.05),,0.05(0.002),0.02(0.001),0.65(0.04),0.34(0.04)
+1,Kanha Tiger Reserve,Central India and Eastern Ghats,V.2.7,254,Kanha Tiger Reserve,2314,664,22168,,105,Pmix(sex)g0(sex)σ(sex),5.57 (0.54),,1.48(0.02),2.51(0.04),,0.07(0.003),0.04(0.002),0.60(0.04),0.40(0.04)
+2,Tadoba Andhari Tiger Reserve,Central India and Eastern Ghats,V.2.30,295,Tadoba Andhari Tiger Reserve,1926,630,21063,,97,Pmix(sex)g0(sex)σ(sex),6.33 (0.64),,1.93 (0.04),2.98 (0.07),,0.05 (0.002),0.03 (0.002),0.61 (0.05),0.39 (0.05)
+1,Pench (Madhya Pradesh) Tiger Reserve,Central India and Eastern Ghats,V.2.9,258,Pench (Madhya Pradesh) Tiger Reserve,2100,426,14657,,77,Pmix(sex)g0(sex)σ(sex),5.50 ( 0.6),,1.9(0.05),4.7(0.15),,0.03(0.002),0.01(0.0008),0.59 (0.05),0.40(0.05)
+2,Bramhapuri FD,Central India and Eastern Ghats,V.2.31,298,"Bramhapuri, Chandrapur and Central Chanda Forest Division",2180,417,19139,,66,Pmix(sex)g0(.) σ(sex),4.02 (0.50),,2.32 (0.07),4.43 (0.12),,0.03 (0.001),0.03 (0.001),0.67 (0.06),0.33 (0.06)
+5,Nagarjunsagar Srisailam Tiger Reserve,Central India and Eastern Ghats,V.2.1,243,Nagarjunsagar Srisailam Tiger Reserve,9456,886,36600,,57,Pmix(sex)g0(sex)σ(sex),0.77 (0.10),,2.89 (0.08),5.18 (0.18),,0.03 (0.00),0.02 (0.00),0.74 (0.06),0.26 (0.06)
+4,Melghat Tiger Reserve,Central India and Eastern Ghats,V.2.26,287,Melghat Tiger Reserve,3558,885,26751,,57,Pmix(sex)g0(sex)σ(sex),1.92 (0.26),,2.14 (0.05),3.85 (0.11),,0.04 (0.003),0.03 (0.002),0.64 (0.06),0.36 (0.06)
+6,Ranthambore Tiger Reserve (Division I),Central India and Eastern Ghats,V.2.43,319,Ranthambore Tiger Reserve (Division I),6508,158,13490,,57,Pmix(sex)g0(sex)σ(sex),9.6 (1.27),,1.3(0.03),2.1(0.04),,0.09(0.01),0.08(0.004),0.58(0.07),0.42(0.07)
+4,Ratapani WLS (Obedullaganj),Central India and Eastern Ghats,V.2.12,265,Bhopal Forest Circle,3060,666,26500,,56,Pmix(sex)g0(sex) σ(sex),2.30 (SE 0.31),,2.61 (SE 0.09),4.56 (SE 0.16),,0.02 (SE 0.001),0.04 (SE 0.002),0.60 (0.06),0.40 (0.06)
+7,Panna Tiger Reserve,Central India and Eastern Ghats,V.2.8,256,Panna Tiger Reserve,2019,574,25428,,55,Pmix(sex)g0(sex)σ(sex),3.18 (0.43),,1.92 (0.086),2.7(0.1),,0.035 (0.0024),0.022(0.002),0.66(0.06),0.33(0.06)
+2,Chandrapur FD,Central India and Eastern Ghats,V.2.31,298,"Bramhapuri, Chandrapur and Central Chanda Forest Division",2517,223,8422,,52,Pmix(sex)g0(.) σ(sex),3.87 (0.55),,2.21 (0.10),6.54 (0.34),,0.04 (0.003),0.04 (0.003),0.76 (0.05),0.24 (0.05)
+4,Satpura Tiger Reserve,Central India and Eastern Ghats,V.2.11,262,Satpura Tiger Reserve,2955,830,26761,,50,Pmix(sex)g0(sex)σ(sex),2.01(0.28),,2.47(0.05),4.09(0.11),,0.03(0.002),0.01(0.00),0.57(0.06),0.42(0.06)
+2,Balaghat FD,Central India and Eastern Ghats,V.2.13,268,Kanha-Pench Corridor,4542,495,18770,,49,Pmix(sex) g0(sex) σ(sex),1.77(0.25),,2.4(0.12),4.06(0.25),,0.02(0.002),0.01(0.002),0.59(0.07),0.40(0.05)
+1,"Pench Tiger Reserve, Maharashtra",Central India and Eastern Ghats,V.2.28,291,"Pench Tiger Reserve, Maharashtra",1500,302,8470,,48,Pmix(sex)g0(sex)σ(sex),5.11 (0.74),,2.06 (0.08),3.35 (0.14),,0.04 (0.003),0.02 (0.002),0.60 (0.07),0.40 (0.07)
+2,Central Chanda FD,Central India and Eastern Ghats,V.2.31,298,"Bramhapuri, Chandrapur and Central Chanda Forest Division",1617,308,12094,,36,Pmix(sex)g0(.) σ(sex),2.87 (0.48),,3.60 (0.17),2.84 (0.11),,0.02 (0.002),0.05 (0.004),0.60 (0.09),0.40 (0.09)
+6,Sariska Tiger Reserve,Central India and Eastern Ghats,V.2.45,322,Sariska Tiger Reserve,,158,8359,694,19,,,,,,,,,,
+3,Sanjay Tiger Reserve,Central India and Eastern Ghats,V.2.10,260,Sanjay Tiger Reserve,2565,573,17011,,16,Pmix(sex)g0(sex)σ(sex),0.78(0.20),,2.44(0.1),6.6(0.3),,0.04(0.004),0.01(0.002),0.65(0.07),0.35(0.07)
+2,Umaria Forest Division,Central India and Eastern Ghats,V.2.23,282,Umaria Forest Division,843,102,3014,,16,Pmix(sex)g0(sex)σ(sex),3.54(0.92),,1.3(0.4),2.7(0.1),,0.06(0.01),0.009(0.003),0.65(0.17),0.37(0.17)
+2,Gadchiroli – Chaprala Complex,Central India and Eastern Ghats,V.2.33,302,Gadchiroli – Chaprala Complex,3932,541,19249,,16,Pmix(sex)g0(.)σ(sex),0.72 (0.18),,2.29 (0.15),9.02 (0.44),,0.03 (0.004),0.03 (0.004),0.74 (0.10),0.26 (0.10)
+8,Similipal Tiger Reserve,Central India and Eastern Ghats,V.2.39,314,Similipal Tiger Reserve,2209,459,20655,,16,Pmix(sex)g0(sex)σ(sex),0.91 (0.23),,2.15 (0.08),5.22 (0.32),,0.03 (0.003),0.02 (0.002),0.75 (0.1),0.25 (0.1)
+2,Shahdol Forest Division,Central India and Eastern Ghats,V.2.21,279,Shahdol Forest Division,2084,95,2699,,15,Pmix(sex)g0(sex)σ(sex),1.56(0.45),,2.26(0.29),6.90(0.94),,0.05(0.014),0.01(0.00),0.75(0.09),0.24(0.09)
+1,Mandla FD,Central India and Eastern Ghats,V.2.13,268,Kanha-Pench Corridor,1779.75,107,4326,,14,Pmix(sex) g0(sex)σ(sex),1.52(0.43),,2.36(1.00),6.67(1.00),,0.02(0.00),0.007(0.00),0.58(0.13),0.41(0.13)
+,Lamta Project,Central India and Eastern Ghats,V.2.13,268,Kanha-Pench Corridor,2480.25,221,9082,,14,Pmix(sex) g0(sex) σ(sex),1.04(0.28),,2.00(0.24),5.84(0.69),,0.02(0.00),0.01(0.00),0.65(0.12),0.34(0.12)
+,North Panna Forest Division,Central India and Eastern Ghats,V.2.18,274,North Panna Forest Division,826,112,3631,,13,Pmix(sex)g0(.)σ(.),2.1 (0.60),,2.57 (0.19),2.57 (0.19),,0.043 (0.007),0.043 (0.007),0.57 (0.17),0.43(0.17)
+,Padharkawda Forest Division,Central India and Eastern Ghats,V.2.36,308,Pandharkawda Forest Division and Tipeshwar Wildlife Sanctuary,900,106,3279,,13,Pmix(sex)g0(.)σ(sex),1.73 (0.50),,1.79 (0.14),6.05 (0.34),,0.21 (0.003),0.05 (0.006),0.61 (0.13),0.39 (0.13)
+3,South-Seoni FD,Central India and Eastern Ghats,V.2.13,268,Kanha-Pench Corridor,2060.75,96,2410,,12,Pmix(sex) g0(.)σ(sex),0.81(0.27),,7.6(0.9),7.5(0.9),,0.015(0.007),0.016(0.007),0.37(0.17),0.62(0.17)
+1,Amrabad Tiger Reserve,Central India and Eastern Ghats,V.2.49,327,Amrabad Tiger Reserve,3980,812,25822,,12,Pmix(sex)g0(.)σ(.),0.40 (0.12),,3.56 (0.27),3.56 (0.27),,0.003 (0.001),0.003 (0.001),0.60(0.15),0.40 (0.15)
+1,Nawegaon Nagzira Tiger Reserve,Central India and Eastern Ghats,V.2.27,289,Nawegaon Nagzira Tiger Reserve,2098,526,16269,,11,Pmix(sex)g0(.)σ(sex),0.64 (0.20),,3.31 (0.31),7.74 (0.46),,0.02 (0.002),0.02 (0.002),0.54 (0.16),0.46 (0.16)
+2,Tipeshwar Widlife Sacntuary,Central India and Eastern Ghats,V.2.36,308,Pandharkawda Forest Division and Tipeshwar Wildlife Sanctuary,255,62,2252,,11,Pmix(sex)g0(.)σ(sex),7.05 (1.92),,1.73 (0.10),2.41 (0.19),,0.10 (0.012),0.04 (0.007),0.52 (0.15),0.48 (0.15)
+,Sehore FD,Central India and Eastern Ghats,V.2.12,265,Bhopal Forest Circle,740,48,1217,,10,Pmix(sex)g0(sex) σ(sex),2.11(SE 0.70),,2.30(SE 0.27),3.81(SE 0.57),,0.02(SE 0.01),0.02(SE 0.01),0.52(0.17),0.47(0.17)
+2,Bor Tiger Reserve,Central India and Eastern Ghats,V.2.25,285,Bor Tiger Reserve,1122.5,206,5961,,9,Pmix(sex)g0(.)σ(sex),1.02 (0.35),,3.61 (0.24),6.58 (0.65),,0.03 (0.003),0.03 (0.003),0.81 (0.12),0.19 (0.12)
+,Barghat Project,Central India and Eastern Ghats,V.2.13,268,Kanha-Pench Corridor,NA,69,1110,,8,NA,NA,,NA,NA,,NA,NA,NA,NA
+4,Bhopal FD,Central India and Eastern Ghats,V.2.12,265,Bhopal Forest Circle,NA,43,1044,,7,NA,NA,,NA,NA,,NA,NA,NA,NA
+,Dewas FD,Central India and Eastern Ghats,V.2.12,265,Bhopal Forest Circle,NA,120,3309,,7,NA,NA,,NA,NA,,NA,NA,NA,NA
+1,Achanakmar Tiger Reserve,Central India and Eastern Ghats,V.2.3,246,Achanakmar Tiger Reserve,,317,8606,93,5,,,,,,,,,,
+4,Nauradehi Wildlife Sanctuary,Central India and Eastern Ghats,V.2.16,271,Nauradehi Wildlife Sanctuary,,114,3171,178,5,,,,,,,,,,
+2,Umred Paoni Karhandla Wildlife Sanctuary,Central India and Eastern Ghats,V.2.37,310,Umred Paoni Karhandla Wildlife Sanctuary,445,85,2631,,5,Pmix(sex)g0(.)σ(sex),1.72 (0.82),,5.03 (0.37),5.03 (0.37),,0.04 (0.005),0.04 (0.005),0.60 (0.22),0.40 (0.22)
+,Kagaznagar Forest Division,Central India and Eastern Ghats,V.2.52,332,Kagaznagar and Chennur Forest Division,,147,4749,195,4,,,,,,,,,,
+,Rampur Bhatodi Project Division,Central India and Eastern Ghats,V.2.19,275,Rampur Bhatodi Project Division,,39,1046,14,3,,,,,,,,,,
+,Satna Forest Division,Central India and Eastern Ghats,V.2.20,277,Satna Forest Division,,88,2810,112,3,,,,,,,,,,
+,Narmadapuram Forest Division,Central India and Eastern Ghats,V.2.15,270,Narmadapuram Forest Division,,267,8510,13,2,,,,,,,,,,
+,North Betul Forest Division,Central India and Eastern Ghats,V.2.17,272,North Betul Forest Division,,107,3170,50,2,,,,,,,,,,
+,Painganga Wildlife Sanctuary,Central India and Eastern Ghats,V.2.35,306,Painganga Wildlife Sanctuary,,42,1174,46,2,,,,,,,,,,
+6,Kailadevi Wildlife Sanctuary,Central India and Eastern Ghats,V.2.44,320,Kailadevi Wildlife Sanctuary,,14,673,18,2,,,,,,,,,,
+,South Panna Territorial Forest Division,Central India and Eastern Ghats,V.2.22,280,South Panna Territorial Forest Division,,94,2538,1,1,,,,,,,,,,
+5,Papikonda National Park,Central India and Eastern Ghats,V.2.2,244,Papikonda National Park,,103,3792,6,1,,,,,,,,,,
+8,Kuldiha Wildlife Sanctuary,Central India and Eastern Ghats,V.2.40,315,Kuldiha Wildlife Sanctuary,,16,973,2,1,,,,,,,,,,
+6,Mukundara Hills Tiger Reserve,Central India and Eastern Ghats,V.2.41,316,Mukundara Hills Tiger Reserve,,169,8451,43,1,,,,,,,,,,
+6,Ramgarh-Visdhari Tiger Reserve,Central India and Eastern Ghats,V.2.42,317,Ramgarh-Visdhari Tiger Reserve,,74,5215,40,1,,,,,,,,,,
+,Chennur Forest Division,Central India and Eastern Ghats,V.2.52,332,Kagaznagar and Chennur Forest Division,,151,4518,0,0,,,,,,,,,,
+,Udanti-Sitanadi Tiger Reserve,Central India and Eastern Ghats,V.2.4,248,Udanti-Sitanadi Tiger Reserve,,143,3783,0,,,,,,,,,,,
+,Palamau Tiger Reserve,Central India and Eastern Ghats,V.2.5,250,Palamau Tiger Reserve,,323,17765,0,,,,,,,,,,,
+,Kuno National Park,Central India and Eastern Ghats,V.2.14,269,Kuno National Park,,146,4735,0,,,,,,,,,,,
+,West Betul Forest Division,Central India and Eastern Ghats,V.2.24,283,West Betul Forest Division,,100,3219,0,,,,,,,,,,,
+,Sahyadri Tiger Reserve,Central India and Eastern Ghats,V.2.29,293,Sahyadri Tiger Reserve,,435,17400,0,,,,,,,,,,,
+,Dnyanganga Wildlife Sanctuary,Central India and Eastern Ghats,V.2.32,300,Dnyanganga Wildlife Sanctuary,,82,2136,0,,,,,,,,,,,
+,Katepurna Wildlife Sanctuary,Central India and Eastern Ghats,V.2.34,304,Katepurna Wildlife Sanctuary and Karanja Sohol Wildlife Sanctuary,,15,371,0,,,,,,,,,,,
+,Karanja Sohol Wildlife Sanctuary,Central India and Eastern Ghats,V.2.34,304,Katepurna Wildlife Sanctuary and Karanja Sohol Wildlife Sanctuary,,8,207,0,,,,,,,,,,,
+,Satkosia Tiger Reserve,Central India and Eastern Ghats,V.2.38,312,Satkosia Tiger Reserve,,258,1886,0,,,,,,,,,,,
+,Bhainsrodgarh Wildlife Sanctuary,Central India and Eastern Ghats,V.2.46,323,Bhainsrodgarh Wildlife Sanctuary,,29,1608,0,,,,,,,,,,,
+,Kumbhalgarh Wildlife Sanctuary,Central India and Eastern Ghats,V.2.47,324,Kumbhalgarh Wildlife Sanctuary,,52,4029,0,,,,,,,,,,,
+,Shergarh Wildlife Sanctuary,Central India and Eastern Ghats,V.2.48,325,Shergarh Wildlife Sanctuary,,31,1532,0,,,,,,,,,,,
+,Kawal Tiger Reserve,Central India and Eastern Ghats,V.2.50,329,Kawal Tiger Reserve,,316,9471,0,,,,,,,,,,,
+,Eturnagaram Wildlife Sanctuary,Central India and Eastern Ghats,V.2.51,330,Eturnagaram-Kothagudam,,96,2639,0,,,,,,,,,,,
+,Kothagudem forest division,Central India and Eastern Ghats,V.2.51,330,Eturnagaram-Kothagudam,,56,1256,0,,,,,,,,,,,
+1,Bandipur Tiger Reserve,Western Ghats,V.3.7,342,Bandipur Tiger Reserve,2009,612,19407,,150,Pmix (sex) g0(sex) σ(sex),9.50(0.77),,1.75(0.03),3 (0.06),,0.04(0.002),0.03(0.001),0.61(0.04),0.39(0.04)
+1,Nagarahole Tiger Reserve,Western Ghats,V.3.10,348,Nagarahole Tiger Reserve,1649,489,17859,,140,Pmix (sex) g0(sex) σ(sex),11.15 (0.95),,1.3(0.03),2.3(0.05),,0.06(0.004),0.03(0.002),0. 55 (0.05),0.45(0.05)
+1,Mudumalai Tiger Reserve,Western Ghats,V.3.45,392,Mudumalai Tiger Reserve,2159,395,17843,,114,Pmix (sex)g0(sex) σ(sex),7.72 (0.72),,1.5(0.03),3(0.08),,0.06(0.00),0.03(0.00),0.60(0.05),0.40(0.05)
+1,Sathyamangalam Tiger Reserve,Western Ghats,V.3.46,394,Sathyamangalam Tiger Reserve,2677,694,21407,,85,Pmix (sex)g0(sex) σ(sex),4.24(0.46),,2(0.05),3.4(0.1),,0.03(0.002),0.02(0.001),0.68(0.05),0.32(0.05)
+1,Wayanad landscape,Western Ghats,V.3.65,425,Wayanad landscape,2475,281,9655,,80,Pmix (sex)g0(.) σ(sex),5.3(0.6),,1.7(0.05),2.9(0.11),,0.04(0.002),0.04(0.002),0.69(0.05),0.31(0.05)
+1,Nilgiri Forest Division,Western Ghats,V.3.55,409,Nilgiri Forest Division,2425,328,12023,,50,Pmix (sex)g0(sex) σ(sex),3.08(0.4),,1.5(0.05),3.1(0.1),,0.07(0.01),0.03(0.002),0.67(0.07),0.33(0.07)
+2,BRT Hills Tiger Reserve,Western Ghats,V.3.9,346,BRT Hills Tiger Reserve,1445,260,9028,,37,Pmix (sex) g0(sex) σ(sex),4.18(0.69),,2.3(0.1),4.3(0.2),,0.02(0.003),0.02(0.002),0.69(0.07),0.31(0.07)
+3,Parambikulam Tiger Reserve,Western Ghats,V.3.56,411,Parambikulam Tiger Reserve,1927,242,11132,,31,Pmix (sex)g0(sex) σ(sex),2.29(0.41),,2.2(0.1),4.6(0.27),,0.04(0.004),0.02(0.003),0.64(0.09),0.36(0.09)
+3,Periyar Tiger Reserve,Western Ghats,V.3.57,413,Periyar Tiger Reserve,2951,396,9758,,30,Pmix (sex)g0(sex) σ(sex),1.43(0.27),,4.4(0.3),5.7(0.3),,0.008(0.001),0.016(0.002),0.54(0.09),0.46(0.09)
+4,Bhadra Tiger Reserve,Western Ghats,V.3.8,344,Bhadra Tiger Reserve,1866,332,10808,,28,Pmix (sex) g0(sex) σ(sex),2.34 (0.44),,2.1(0.11),2.9(0.15),,0.03(0.004),0.02(0.002),0.57(0.11),0.43(0.11)
+5,Kali Tiger Reserve,Western Ghats,V.3.6,340,Kali Tiger Reserve,5091,399,9920,,17,Pmix (sex) g0(.) σ(.),0.57 (0.14),4.9(0.4),,,0.01(0.001),,,0.29 (0.12),0.71 (0.12)
+3,Anamalai Tiger Reserve,Western Ghats,V.3.43,388,Anamalai Tiger Reserve,2930,496,16747,,16,Pmix (sex)g0(.) σ(.),0.69(0.17),,5(0.3),5(0.3),,0.01(0.001),0.01(0.001),0.53 (0.13),0.47(0.13)
+,Coimbatore Wildlife Division,Western Ghats,V.3.48,398,Coimbatore Wildlife Division,1326,111,4090,,14,Pmix (sex)g0(sex) σ(sex),1.59(0.47),,1.3(0.2),3.9(0.6),,0.13(0.04),0.02(0.01),0.73(0.12),0.27(0.12)
+,Srivilliputhur-Meghamalai Tiger Reserve,Western Ghats,V.3.47,396,Srivilliputhur-Meghamalai Tiger Reserve,1674,344,28107,,12,Pmix (sex)g0(sex) σ(.),1.05(0.31),,2.5(0.17),2.5(0.17),,0.01(0.002),0.02(0.004),0.61(0.13),0.39(0.13)
+1,Madikeri Wildlife Division,Western Ghats,V.3.30,373,Madikeri Wildlife Division,4459,169,4221,,10,Pmix (sex)g0(.) σ(.),0.36 (0.13),5.1(0.8),,,0.02(0.01),,,0.5(0.2),0.5(0.2)
+1,Gudalur Wildlife Division,Western Ghats,V.3.50,402,Gudalur Wildlife Division,1368,80,2897,,10,Pmix (sex)g0(.) σ(sex),2.63(1.39),,0.8(0.3),3.3(0.5),0.03(0.02),,,0.83(0.11),0.17(0.11)
+,Silent Valley landscape,Western Ghats,V.3.62,421,Silent Valley landscape,1313,86,2650,,10,Pmix (sex)g0(sex) σ(sex),1.32 (0.45),,0.9(0.1),3.3(0.5),,0.29(0.1),0.01(0.01),0.41(0.26),0.59(0.26)
+,Erode Wildlife Division,Western Ghats,V.3.49,400,Erode Wildlife Division,1746,368,11186,,9,Pmix (sex)g0(.) σ(.),0.65(0.22),4.2(0.3),,,0.02(0.002),,,0.62(0.17),0.38(0.17)
+,Mukurthi National Park,Western Ghats,V.3.53,406,Mukurthi National Park,849,50,2328,,9,Pmix (sex)g0(.) σ(.),1.34(0.5),,3.7(0.50),3.7(0.50),,0.02(0.004),0.02(0.004),0.71(0.17),0.29(0.17)
+4,Chikmagalur Forest Division,Western Ghats,V.3.17,357,Chikmagalur Forest Division,1261,44,1068,,7,Pmix (sex)g0(.) σ(.),1.73 (0.9),1.8(0.5),,,0.03(0.02),,,0.8(0.18),0.2(0.18)
+,Koppa Wildlife Division,Western Ghats,V.3.17,368,Koppa Wildlife Division,6547,49,1363,,7,Pmix (sex)g0(.) σ(.),0.19 (0.08),10.6(1.9),,,0.01(0.01),,,0.75(0.22),0.25(0.22)
+,Konni Forest Division,Western Ghats,V.3.59,416,Konni Forest Division,1114,68,2856,,7,Pmix (sex)g0(.) σ(.),0.79 (0.33),6.1(1.1),,,0.01(0.002),,,0.29(0.17),0.71(0.17)
+,Ranni Wildlife Division,Western Ghats,V.3.61,419,Ranni Wildlife Division,2434,82,1690,,6,Pmix (sex)g0(.) σ(.),0.44 (0.22),5.9(1.1),,,0.02(0.01),,,0.25(0.22),0.75(0.22)
+,Belagavi Forest Division,Western Ghats,V.3.14,352,Belagavi Forest Division,,107,2721,45,5,,,,,,,,,,
+,Bhadravathi Forest Division,Western Ghats,V.3.15,354,Bhadravathi Forest Division,1512,120,2759,,5,Pmix (sex)g0(.) σ(.),0.42 (0.2),3.3(0.7),,,0.06(0.03),,,0. 67 (0.27),0.33(0.27)
+1,Madikeri Forest Division,Western Ghats,V.3.29,371,Madikeri Forest Division,1654,156,3529,,5,Pmix (sex)g0(.) σ(.),0.52 (0.25),2(0.2),,,0.05(0.01),,,0.33(0.27),0.67(0.27)
+2,MM Hills Wildlife Sanctuary,Western Ghats,V.3.32,376,MM Hills Wildlife Sanctuary,2230,422,11094,,5,Pmix (sex)g0(.) σ(.),0.32 (0.15),3.1(0.5),,,0.02(0.00),,,0.75(0.2),0.25(0.2)
+,Kalakad Mundanthurai Tiger Reserve,Western Ghats,V.3.44,390,Kalakad Mundanthurai Tiger Reserve,1981,228,10416,,5,Pmix (sex)g0(.) σ(.),0.27(0.12),,7(0.7),7(0.7),,0.011(0.004),0.011(0.004),0.25(0.21),0.75(0.21)
+1,Mysore Forest Division,Western Ghats,V.3.33,377,Mysore Forest Division,,35,765,10,4,,,,,,,,,,
+,Eravikulam National Park,Western Ghats,V.3.58,414,Eravikulam National Park,,28,791,41,4,,,,,,,,,,
+,Malayatoor Wildlife Division,Western Ghats,V.3.60,417,Malayatoor Wildlife Division,,100,2425,85,4,,,,,,,,,,
+,Virajpet Forest Division,Western Ghats,V.3.41,385,Virajpet Forest Division,,100,2454,20,3,,,,,,,,,,
+,Yellapura Forest Division,Western Ghats,V.3.42,386,Yellapura Forest Division,,95,2266,7,3,,,,,,,,,,
+,Kodaikanal Wildlife Sanctuary,Western Ghats,V.3.52,404,Kodaikanal Wildlife Sanctuary,,97,2928,57,3,,,,,,,,,,
+,Nellai Wildlife Sanctuary,Western Ghats,V.3.54,407,Nellai Wildlife Sanctuary,,80,3421,28,3,,,,,,,,,,
+,Mhadei Wildlife Sanctuary,Western Ghats,V.3.1,334,Mhadei Wildlife Sanctuary,,32,590,14,2,,,,,,,,,,
+,Mollem National Park,Western Ghats,V.3.2,335,Mollem National Park,,28,728,21,2,,,,,,,,,,
+5,Bannerghatta National Park,Western Ghats,V.3.13,351,Bannerghatta National Park,,83,1951,55,2,,,,,,,,,,
+,Karwar Forest Division,Western Ghats,V.3.26,366,Karwar Forest Division,,126,3041,9,2,,,,,,,,,,
+,Kudremukh National Park,Western Ghats,V.3.28,369,Kudremukh National Park,,172,4343,14,2,,,,,,,,,,
+5,Cauvery Wildlife Sanctuary,Western Ghats,V.3.16,355,Cauvery Wildlife Sanctuary,,448,10656,10,1,,,,,,,,,,
+,Haliyal Forest Division,Western Ghats,V.3.20,360,Haliyal Forest Division,,104,2479,4,1,,,,,,,,,,
+,Shivamogga Wildlife Division,Western Ghats,V.3.38,382,Shivamogga Wildlife Division,,163,4110,8,1,,,,,,,,,,
+,Vazhachal Forest Division,Western Ghats,V.3.64,423,Vazhachal Forest Division,,19,331,7,1,,,,,,,,,,
+,Bondla Wildlife Sanctuary,Western Ghats,V.3.3,336,Bondla Wildlife Sanctuary,,5,171,0,,,,,,,,,,,
+,Cotigao Wildlife Sanctuary,Western Ghats,V.3.4,337,Cotigao Wildlife Sanctuary,,7,81,0,,,,,,,,,,,
+,Netravali Wildlife Sanctuary,Western Ghats,V.3.5,338,Netravali Wildlife Sanctuary,,23,542,0,,,,,,,,,,,
+,Ballari Forest Division,Western Ghats,V.3.11,349,Ballari Forest Division,,46,970,0,,,,,,,,,,,
+,Bangalore Rural Division,Western Ghats,V.3.12,350,Bangalore Rural Division,,48,1127,0,,,,,,,,,,,
+,Davanagere Forest Division,Western Ghats,V.3.18,358,Davanagere Forest Division,,19,158,0,,,,,,,,,,,
+,Dharwad Forest Division,Western Ghats,V.3.19,359,Dharwad Forest Division,,26,605,0,,,,,,,,,,,
+,Hassan Forest Division,Western Ghats,V.3.21,361,Hassan Forest Division,,11,237,0,,,,,,,,,,,
+,Haveri Forest Division,Western Ghats,V.3.22,362,Haveri Forest Division,,18,408,0,,,,,,,,,,,
+,Honnavar Forest Division,Western Ghats,V.3.23,363,Honnavar Forest Division,,124,2997,0,,,,,,,,,,,
+,Hunsur Forest Division,Western Ghats,V.3.24,364,Hunsur Forest Division,,36,941,0,,,,,,,,,,,
+,Kalburgi Forest Division,Western Ghats,V.3.25,365,Kalburgi Forest Division,,23,295,0,,,,,,,,,,,
+,Mangalore Forest Division,Western Ghats,V.3.28,374,Mangalore Forest Division,,57,1093,0,,,,,,,,,,,
+,Mysore Wildlife Division,Western Ghats,V.3.34,378,Mysore Wildlife Division,,30,744,0,,,,,,,,,,,
+,Ramanagara Forest Division,Western Ghats,V.3.35,379,Ramanagara Forest Division,,26,346,0,,,,,,,,,,,
+,Sagara Forest Division,Western Ghats,V.3.36,380,Sagara Forest Division,,51,1316,0,,,,,,,,,,,
+,Shivamogga Forest Division,Western Ghats,V.3.37,381,Shivamogga Forest Division,,38,845,0,,,,,,,,,,,
+,Sirsi Forest Division,Western Ghats,V.3.39,383,Sirsi Forest Division,,101,2415,0,,,,,,,,,,,
+,Tumkur Forest Division,Western Ghats,V.3.40,384,Tumkur Forest Division,,24,575,0,,,,,,,,,,,
+,Kanyakumari Wildlife Sanctuary,Western Ghats,V.3.51,403,Kanyakumari Wildlife Sanctuary,,105,3023,0,,,,,,,,,,,
+,Thattekad Bird Sanctuary,Western Ghats,V.3.63,422,Thattekad Bird Sanctuary,,11,314,0,,,,,,,,,,,
+1,Kaziranga Tiger Reserve,North East Hills and Brahmaputra Plains,V.4.5,434,Kaziranga Tiger Reserve,1014,230,13839,,104,Pmix (sex)g0(sex)σ(sex),13.44 (1.32),,1.139 (0.02),2.12 (0.049),,0.099(0.005),0.046 (0.002),0.61(0.05),0.39(0.05)
+3,Manas Tiger Reserve,North East Hills and Brahmaputra Plains,V.4.6,437,Manas Tiger Reserve,743,267,10497,,57,Pmix (sex)g0(sex)σ(sex),7.91 (1.05),,1.988 (0.07),3.0388 (0.123),,0.025 (0.002),0.015 (0.002),0.57 (0.07),0.43 (0.07)
+1,Orang Tiger Reserve,North East Hills and Brahmaputra Plains,V.4.7,439,Orang Tiger Reserve,229,39,1189,,16,Pmix (sex)g0(.)σ(sex),11.34 (2.9),,1.436 (0.09),3.58 (0.422),,0.072 (0.009),0.072 (0.009),0.84 (0.08),0.16(0.08)
+1,Pakke Tiger Reserve,North East Hills and Brahmaputra Plains,V.4.1,429,Pakke Tiger Reserve,,135,8755,218,6,,,,,,,,,,
+,Nagaon Wildlife Division,North East Hills and Brahmaputra Plains,V.4.8,440,Nagaon Wildlife Division,,16,1514,40,5,,,,,,,,,,
+1,Nameri Tiger Reserve,North East Hills and Brahmaputra Plains,V.4.9,442,Nameri Tiger Reserve,,67,4100,106,3,,,,,,,,,,
+2,Dibang Wildlife Sanctuary,North East Hills and Brahmaputra Plains,V.4.4,433,Dibang Wildlife Sanctuary,,82,4158,110,2,,,,,,,,,,
+4,Buxa Tiger Reserve,North East Hills and Brahmaputra Plains,V.4.10,444,Buxa Tiger Reserve,,162,13734,4,1,,,,,,,,,,
+3,Mahananda Wildlife Sanctuary,North East Hills and Brahmaputra Plains,V.4.13,448,Mahananda Wildlife Sanctuary,,22,1019,9,1,,,,,,,,,,
+,Neora Valley National Park,North East Hills and Brahmaputra Plains,V.4.14,449,Neora Valley National Park,,21,2550,17,1,,,,,,,,,,
+,Namdapha Tiger Reserve,North East Hills and Brahmaputra Plains,V.4.2,430,Namdapha Tiger Reserve,,117,6690,0,,,,,,,,,,,
+,Kamlang Tiger Reserve,North East Hills and Brahmaputra Plains,V.4.3,431,Kamlang Tiger Reserve,,73,6810,0,,,,,,,,,,,
+,Gorumara National Park,North East Hills and Brahmaputra Plains,V.4.11,445,Gorumara National Park,,49,4644,0,,,,,,,,,,,
+,Jaldapara National Park,North East Hills and Brahmaputra Plains,V.4.12,447,Jaldapara National Park,,75,3577,0,,,,,,,,,,,
+,Dampa Tiger Reserve,North East Hills and Brahmaputra Plains,V.4.15,451,Dampa Tiger Reserve,,43,1628,0,,,,,,,,,,,
